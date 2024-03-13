@@ -3,12 +3,23 @@ package com.example.blog;
 import java.time.LocalDateTime;
 import java.util.UUID;
 
+import lombok.Getter;
+
 public class Comment {
 
+	@Getter
 	private UUID commentId;
+
+	@Getter
 	private String author;
+
+	@Getter
 	private String comment;
+
+	@Getter
 	private LocalDateTime timestamp;
+
+	@Getter
 	private String postId;
 
 	private Comment(UUID commentId, String author, String comment, LocalDateTime timestamp, String postId) {
@@ -27,25 +38,5 @@ public class Comment {
 	public static Comment restore(UUID commentId, String author, String comment, LocalDateTime timestamp,
 			String postId) {
 		return new Comment(commentId, author, comment, timestamp, postId);
-	}
-
-	public UUID getCommentId() {
-		return commentId;
-	}
-
-	public String getAuthor() {
-		return author;
-	}
-
-	public String getComment() {
-		return comment;
-	}
-
-	public LocalDateTime getTimestamp() {
-		return timestamp;
-	}
-
-	public String getPostId() {
-		return postId;
 	}
 }

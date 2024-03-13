@@ -1,8 +1,5 @@
 package com.example.blog;
 
-import org.springframework.stereotype.Service;
-
-@Service
 public class CreatePost implements CreatePostUseCase {
 
 	private final PostRepository postRepository;
@@ -12,8 +9,8 @@ public class CreatePost implements CreatePostUseCase {
 	}
 
 	@Override
-	public String execute(PostInputModel postInputModel) {
-		Post post = Post.create(postInputModel.title(), postInputModel.content(), postInputModel.timestamp());
+	public String execute(PostInputDTO input) {
+		Post post = Post.create(input.title(), input.content(), input.timestamp());
 		this.postRepository.save(post);
 		return post.getPostId().toString();
 	}

@@ -3,11 +3,20 @@ package com.example.blog;
 import java.time.LocalDateTime;
 import java.util.UUID;
 
+import lombok.Getter;
+
 public class Post {
 
+	@Getter
 	private UUID postId;
+
+	@Getter
 	private String title;
+
+	@Getter
 	private String content;
+
+	@Getter
 	private LocalDateTime timestamp;
 
 	private Post(UUID postId, String title, String content, LocalDateTime timestamp) {
@@ -21,24 +30,8 @@ public class Post {
 		UUID postId = UUID.randomUUID();
 		return new Post(postId, title, content, timestamp);
 	}
-	
+
 	public static Post restore(UUID postId, String title, String content, LocalDateTime timestamp) {
 		return new Post(postId, title, content, timestamp);
-	}
-
-	public UUID getPostId() {
-		return postId;
-	}
-
-	public String getTitle() {
-		return title;
-	}
-
-	public String getContent() {
-		return content;
-	}
-
-	public LocalDateTime getTimestamp() {
-		return timestamp;
 	}
 }
