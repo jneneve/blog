@@ -1,4 +1,4 @@
-package com.example.blog;
+package com.example.blog.application.domain;
 
 import java.time.LocalDateTime;
 import java.util.UUID;

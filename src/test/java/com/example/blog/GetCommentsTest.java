@@ -7,6 +7,13 @@ import java.util.UUID;
 import org.junit.jupiter.api.Test;
 import org.springframework.context.annotation.Description;
 
+import com.example.blog.adapter.out.persistence.memory.CommentRepositoryMemory;
+import com.example.blog.adapter.out.persistence.memory.PostRepositoryMemory;
+import com.example.blog.application.port.in.GetCommentsUseCase;
+import com.example.blog.application.port.out.CommentRepository;
+import com.example.blog.application.port.out.PostRepository;
+import com.example.blog.application.usecase.GetComments;
+
 public class GetCommentsTest {
 
 	@Test

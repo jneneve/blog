@@ -1,4 +1,4 @@
-package com.example.blog;
+package com.example.blog.application.usecase.dto;
 
 import java.time.LocalDateTime;
 

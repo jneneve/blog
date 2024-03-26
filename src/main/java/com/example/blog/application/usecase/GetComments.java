@@ -1,7 +1,14 @@
-package com.example.blog;
+package com.example.blog.application.usecase;
 
 import java.util.ArrayList;
 import java.util.List;
+
+import com.example.blog.application.domain.Comment;
+import com.example.blog.application.domain.Post;
+import com.example.blog.application.port.in.GetCommentsUseCase;
+import com.example.blog.application.port.out.CommentRepository;
+import com.example.blog.application.port.out.PostRepository;
+import com.example.blog.application.usecase.dto.CommentOutputDTO;
 
 public class GetComments implements GetCommentsUseCase {
 

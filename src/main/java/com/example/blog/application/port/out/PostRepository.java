@@ -1,4 +1,6 @@
-package com.example.blog;
+package com.example.blog.application.port.out;
+
+import com.example.blog.application.domain.Post;
 
 public interface PostRepository {
 

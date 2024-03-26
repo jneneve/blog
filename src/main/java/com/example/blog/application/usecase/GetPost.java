@@ -1,5 +1,13 @@
-package com.example.blog;
+package com.example.blog.application.usecase;
 
+import org.springframework.stereotype.Service;
+
+import com.example.blog.application.domain.Post;
+import com.example.blog.application.port.in.GetPostUseCase;
+import com.example.blog.application.port.out.PostRepository;
+import com.example.blog.application.usecase.dto.PostOutputDTO;
+
+@Service
 public class GetPost implements GetPostUseCase {
 
 	private final PostRepository postRepository;

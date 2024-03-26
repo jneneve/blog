@@ -10,6 +10,20 @@ import java.util.UUID;
 import org.junit.jupiter.api.Test;
 import org.springframework.context.annotation.Description;
 
+import com.example.blog.adapter.out.persistence.memory.CommentRepositoryMemory;
+import com.example.blog.adapter.out.persistence.memory.PostRepositoryMemory;
+import com.example.blog.application.port.in.AddCommentUseCase;
+import com.example.blog.application.port.in.CreatePostUseCase;
+import com.example.blog.application.port.in.GetCommentsUseCase;
+import com.example.blog.application.port.out.CommentRepository;
+import com.example.blog.application.port.out.PostRepository;
+import com.example.blog.application.usecase.AddComment;
+import com.example.blog.application.usecase.CreatePost;
+import com.example.blog.application.usecase.GetComments;
+import com.example.blog.application.usecase.dto.CommentInputDTO;
+import com.example.blog.application.usecase.dto.CommentOutputDTO;
+import com.example.blog.application.usecase.dto.PostInputDTO;
+
 public class AddComentTest {
 
 	@Test

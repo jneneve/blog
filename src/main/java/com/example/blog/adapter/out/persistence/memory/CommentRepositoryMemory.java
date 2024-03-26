@@ -1,7 +1,10 @@
-package com.example.blog;
+package com.example.blog.adapter.out.persistence.memory;
 
 import java.util.ArrayList;
 import java.util.List;
+
+import com.example.blog.application.domain.Comment;
+import com.example.blog.application.port.out.CommentRepository;
 
 public class CommentRepositoryMemory implements CommentRepository {
 

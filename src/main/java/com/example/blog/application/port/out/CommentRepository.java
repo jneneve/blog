@@ -1,6 +1,8 @@
-package com.example.blog;
+package com.example.blog.application.port.out;
 
 import java.util.List;
+
+import com.example.blog.application.domain.Comment;
 
 public interface CommentRepository {
 

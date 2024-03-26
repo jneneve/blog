@@ -7,6 +7,11 @@ import java.util.UUID;
 import org.junit.jupiter.api.Test;
 import org.springframework.context.annotation.Description;
 
+import com.example.blog.adapter.out.persistence.memory.PostRepositoryMemory;
+import com.example.blog.application.port.in.GetPostUseCase;
+import com.example.blog.application.port.out.PostRepository;
+import com.example.blog.application.usecase.GetPost;
+
 public class GetPostTest {
 
 	@Test
